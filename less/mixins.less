@@ -1,0 +1,33 @@
+.center(@horizontal: true, @vertical: true) {
+  position: absolute;
+  & when ( @horizontal = true ) and ( @vertical = true ) {top: 50%;left: 50%;transform: translate(-50%, -50%);}
+  & when ( @horizontal = true ) and ( @vertical = false ) {left: 50%;transform: translate(-50%, 0);}
+  & when ( @horizontal = false ) and ( @vertical = true ) {top: 50%;transform: translate(0, -50%);}
+}
+// .center(500px, 200px);
+.center-hr() {
+display: block;
+margin-left: auto;
+margin-right: auto;
+}
+// .center-hr();
+.clearfix() {
+ &:before,
+ &:after {
+	content: " ";
+	display: table;
+	}
+ &:after {
+	clear: both;
+	}
+}
+
+.container () {
+	width: auto;
+
+	@media @tablet {
+		width: 84%; //640/768 > 84%
+		max-width: 960px; //960/84 = 1142 (центровка начнется чуть раньше)
+		margin: 0 auto;
+	}
+}
