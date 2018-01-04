@@ -1,1 +1,1 @@
-# rmb-barbershop
+# rmb-shop project
