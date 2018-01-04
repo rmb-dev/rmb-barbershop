@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/style.css">
+	<title>Барбершоп Borodinski</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+	<header class="page-header">
+		<div class="page-header__logo page-header__another-pages">
+			<picture>
+				<source
+				media="(min-width: 1200px)"
+				srcset="img/logotype-desktop.svg"
+				type="image/svg+xml">
+				<source
+				media="(min-width: 768px)"
+				srcset="img/logotype-tablet.svg"
+				type="image/svg+xml">
+				<source
+				srcset="img/logotype-mobile.svg"
+				type="image/svg+xml">
+				<img
+				src="img/logotype-mobile.png"
+				srcset="logotype-desktop.png 1200w,
+				logotype-tablet.png 768w"
+				alt="Барбершоп Бородинский">
+			</picture>
+		</div>
+
+		<nav class="main-nav main-nav--closed main-nav--nojs">
+			<button class="main-nav__toggle" type="button">Открыть меню</button>
+			<div class="main-nav__wrapper">
+				<ul class="main-nav__items">
+					<li class="main-nav__item"><a href="index.html">Главная</a></li>
+					<li class="main-nav__item"><a href="our_works.html">Наши работы</a></li>
+					<li class="main-nav__item main-nav__item--active"><a>Записаться</a></li>
+					<li class="main-nav__item main-nav__item--disabled"><a>Контакты</a></li>
+				</ul>
+				<ul class="main-nav__login">
+					<li class="main-nav__login-item"><a class="main-nav__user-login" herf="" title="Войти">	Вход</a></li>
+				</ul>
+			</div>
+		</nav>
+	</header>
+	<div class="page-wrapper polygon polygon__footer--mobile">
+		<div class="page">
+			<section class="register">
+				<h1 class="page__title">Запись на стрижку</h1>
+				<a href="index.html" class="btn-to-index">на главную</a>
+				<form action="url" method="post" class="register-form">
+
+					<fieldset class="register-form__name-fieldset">
+						<div class="register-form__name-wrapper">
+						<input name="name" type="text" placeholder="Имя" class="input-text-barbershop register-form__name">
+						<input name="surname" type="text" placeholder="Фамилия" class="input-text-barbershop register-form__surname">
+						<input name="middle-name" type="text" placeholder="Отчество" class="input-text-barbershop register-form__middle-name">
+						</div>
+					</fieldset>
+
+					<fieldset class="register-form__contacts-fieldset">
+						<div class="register-form__contacts-wrapper">
+						<input name="telephone" type="tel" placeholder="Контактный телефон" class="input-text-barbershop register-form__tel">
+						<input name="email" type="email" placeholder="Контактный e-mail" class="input-text-barbershop register-form__email">
+						</div>
+					</fieldset>
+					<textarea name="message" placeholder="Доп. информация для мастера" id="message" cols="30" rows="6" class="register-form__message"></textarea>
+					<fieldset class="register-form__radio-fieldset">
+						<legend class="register-form__fieldset-title">Выберите модель бороды</legend>
+						<div class="register-form__radio-wrapper">
+						<input type="radio" name="select-beard" id="beard-1" class="input-radio-barbershop register-form__beard-1" checked>
+						<label class="register-form__beard-label register-form__admiral-label" for="beard-1">Адмирал</label>
+						<input type="radio" name="select-beard" id="beard-2" class="input-radio-barbershop register-form__beard-1">
+						<label class="register-form__beard-label register-form__lumberjack-label" for="beard-2">Лесоруб</label>
+						<input type="radio" name="select-beard" id="beard-3" class="input-radio-barbershop register-form__beard-1">
+						<label class="register-form__beard-label register-form__polar-label" for="beard-3">Полярник</label>
+						<input type="radio" name="select-beard" id="beard-4" class="input-radio-barbershop register-form__beard-1">
+						<label class="register-form__beard-label register-form__boyar-label" for="beard-4">Боярин</label>
+						<input type="radio" name="select-beard" id="beard-5" class="input-radio-barbershop register-form__beard-1">
+						<label class="register-form__beard-label register-form__sage-label" for="beard-5">Мудрец</label>
+						</div>
+					</fieldset>
+					<fieldset class="register-form__checkbox-fieldset">
+						<legend class="register-form__fieldset-title">Дополнительные услуги</legend>
+						<div class="register-form__checkbox-wrapper">
+						<input type="checkbox" id="checkbox-1" class="input-checkbox-barbershop register-form__checkbox-1" checked>
+						<label for="checkbox-1" class="register-form__checkbox-label">Подкрасить бороду</label>
+						<input type="checkbox" id="checkbox-2" class="input-checkbox-barbershop register-form__checkbox-1" checked>
+						<label for="checkbox-2" class="register-form__checkbox-label">Накрутить усы</label>
+						<input type="checkbox" id="checkbox-3" class="input-checkbox-barbershop register-form__checkbox-1">
+						<label for="checkbox-3" class="register-form__checkbox-label">Причесать бороду</label>
+						<input type="checkbox" id="checkbox-4" class="input-checkbox-barbershop register-form__checkbox-1">
+						<label for="checkbox-4" class="register-form__checkbox-label">Подровнять вески</label>
+						<input type="checkbox" id="checkbox-5" class="input-checkbox-barbershop register-form__checkbox-1">
+						<label for="checkbox-5" class="register-form__checkbox-label">Убрать седину</label>
+						<input type="checkbox" id="checkbox-6" class="input-checkbox-barbershop register-form__checkbox-1">
+						<label for="checkbox-6" class="register-form__checkbox-label">Отполировать лысину</label>
+						</div>
+					</fieldset>
+						<button name="register" class="register-form__btn">Отправить заявку</button>
+				</form>
+			</section>
+		</div>
+	</div>
+	<footer class="page-footer">
+		<div class="page-footer__wrapper">
+			<div class="page-footer__contact-info">
+				<b class="contact-info__title">Барбершоп Бородинский</b>
+				<p class="contact-info__adress">г.Санект-Петербург, ул. Большая Конющенная 19/8</p>
+				<a href="tel::+7-812-555-66-66" class="contact-info__telephone">+7 (812) 555-66-66</a>
+			</div>
+			<div class="page-footer__socials-wrapper">
+				<span>Давайте дружить!</span>
+				<div class="page-footer__socials">
+					<a href="#" class="social__icon social__icon--vk"></a>
+					<a href="#" class="social__icon social__icon--fb"></a>
+					<a href="#" class="social__icon social__icon--is"></a>
+				</div>
+			</div>
+			<div class="page-footer__developed-wrapper">
+				<div class="page-footer__developed">
+					<span>Верстка:</span>
+					<a href="https://github.com/welch08" class="developed__link">
+						<span class="developed__label">welch08.github.io</span></a>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<div class="login-form__wrapper">
+			<form action="" method="post" class="login-form">
+				<legend class="login-form__title">Личный кабинет</legend>
+				<p class="login-form__some-text">Введите свой логин и пароль, чтобы войти</p>
+				<label for="login" class="login-form__label login-form__login-label">
+					<input type="text" class="login-form__input-field login-form__login-field" name="login" id="login" placeholder="Логин" autofocus>
+				</label>
+				<label for="password" class="login-form__label login-form__password-label"><input type="password" class="login-form__input-field login-form__password__field" id="password" placeholder="Пароль"></label>
+				<input type="checkbox" id="checkbox" class="login-form__checkbox">
+				<label for="checkbox" class="login-form__checkbox-label">Запомните меня</label>
+				<a href="#" class="login-form__link">Я забыл пароль!</a>
+				<button class="login-form__btn" type="button" name="log-in">Войти<span class="mobile--hidden"> в личный кабинет</spam?</button>
+				<button type="button" class="login-form__btn-close ghost-btn">Закрыть</button>
+			</form>
+		</div>
+		<script>
+		var navMain = document.querySelector('.main-nav');
+		var navToggle = document.querySelector('.main-nav__toggle');
+
+		navMain.classList.remove('main-nav--nojs');
+
+		navToggle.addEventListener('click', function() {
+			if (navMain.classList.contains('main-nav--closed')) {
+				navMain.classList.remove('main-nav--closed');
+				navMain.classList.add('main-nav--opened');
+			} else {
+				navMain.classList.add('main-nav--closed');
+				navMain.classList.remove('main-nav--opened');
+			}
+		});
+		</script>
+		<script type="text/javascript">
+		var loginLink = document.querySelector('.main-nav__user-login');
+		var loginForm = document.querySelector('.login-form__wrapper');
+		var formClose = document.querySelector('.login-form__btn-close');
+
+		loginLink.addEventListener('click', function() {
+			loginForm.classList.toggle('login-form--show');
+		});
+		formClose.addEventListener('click', function() {
+			loginForm.classList.remove('login-form--show');
+		});
+		</script>
+	</body>
+	</html>
